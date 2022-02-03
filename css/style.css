@@ -1,0 +1,198 @@
+/* CSS Reset */
+*{
+    margin:0px;
+    padding:0px;
+
+}
+
+/* CSS Variables */
+:root{
+  --navbar-height:60px;  
+}
+
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    align-items:center;
+    position:relative;
+    
+}
+
+/* Navigation Bar: Logo */
+#logo{
+   margin:10px 10px; 
+}
+
+#logo img{
+    margin:15px 30px;
+    height:80px;
+    width:100px;
+}
+
+/* Navigation Bar: List styling */
+#navbar ul{
+    display:flex;
+}
+
+#navbar::before{
+    content:"";
+    background-color:black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:1;
+}
+
+#navbar ul li{
+    font-size:1rem;
+    list-style:none;
+}
+
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+}
+
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:20px 300px;
+    height:1000px;
+    justify-content:center;
+    align-items:center;
+}
+
+#home::before{
+    content:"";
+    background:url('../img1/bg6.jpg') no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:80%;
+    width:100%;
+    z-index:-1;
+    opacity:0.9;
+}
+
+#home h1{
+    color:black;
+    text-align:center;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+#home p{
+    color:black;
+    text-align:center;
+    font-size:1.2rem;
+    font-family: 'Andada Pro', serif;
+    font-weight:bold;
+    word-spacing:0.2cm;
+}
+
+/* Services Section */
+#services{
+    margin:80px;
+    display:flex;
+}
+#services .box{
+    border:4px solid tomato;
+    margin:0px 20px;
+    padding:60px;
+    border-radius:23px;
+    background-color: #e0e0e0;
+}
+#services .box img{
+    height:500px;
+    display:block;
+    margin:auto;
+    padding-bottom:10px;
+    
+    
+}
+#services .box p{
+    text-align:center;
+    padding:10px 10px;
+    font-family: 'Andada Pro', serif;
+}
+
+/* Clients Section */
+#clients-section{
+    height:700px;
+}
+#clients-section::before{
+    content:"";
+    background:url('../img1/bg5.jpg') no-repeat center center/cover;
+    position:absolute;
+    
+    height:45%;
+    width:100%;
+    z-index:-1;
+    
+}
+#clients{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    padding:50px;
+}
+#clients img{
+    height:200px;
+}
+/* Contact Section */
+#contact{
+    height:600px;
+}
+#contact::before{
+    content:"";
+    background:url('../img1/contactImage.jpg') no-repeat center center/cover;
+    position:relarive;
+    
+    height:70%;
+    width:100%;
+    z-index:-1; 
+
+/* Utility Classes */
+.primary-h {
+    font-size:2.5rem;
+    padding:20px;
+    text-align:center;
+    font-family:'Source Serif 4', sans-serif;
+}
+
+.secondary-h {
+    font-size:2rem;
+    padding:10px 20px;
+    text-align:center;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+#btn{
+    background-color:red;
+    color:white;
+    border:3px solid white;
+    border-radius:50px;
+    font-size:1.6rem;
+    margin:50px;
+    padding:10px 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor:pointer;
+}
+
+
+
